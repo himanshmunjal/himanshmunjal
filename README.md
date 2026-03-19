@@ -122,23 +122,25 @@
 
 ## 🎯 Current Focus
 
+- DSA
 - Deep Learning Systems (Transformers, GNNs)  
 - Backend Engineering (Golang + System Design)  
 - Production ML Pipelines  
 - Building AI Products  
 
+## 🌐 Portfolio & Contact
+
+🔗 Portfolio: https://your-portfolio-link.com  
+📂 GitHub: https://github.com/himanshmunjal  
+💼 LinkedIn: https://linkedin.com/in/your-link  
+
+📧 Email: munjalhimansh2211@gmail.com  
+
 ---
 
-## 📬 Connect With Me
+## ⚡ Quick Pitch
 
-<p align="left">
-<a href="https://linkedin.com/in/your-link" target="blank">
-<img src="https://skillicons.dev/icons?i=linkedin" height="30" />
-</a>
-<a href="mailto:your-email@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail" height="30" />
-</a>
-</p>
+> I build AI-powered systems, production ML pipelines, and scalable backend architectures using Golang and Python.
 
 ---
 
