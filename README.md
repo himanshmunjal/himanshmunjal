@@ -130,9 +130,9 @@
 
 ## 🌐 Portfolio & Contact
 
-🔗 Portfolio: https://your-portfolio-link.com  
-📂 GitHub: https://github.com/himanshmunjal  
-💼 LinkedIn: https://linkedin.com/in/your-link  
+🔗 Portfolio: [https://your-portfolio-link.com](https://himansh-portfolio.vercel.app/)  
+📂 GitHub: [https://github.com/himanshmunjal](https://github.com/himanshmunjal)  
+💼 LinkedIn: [https://linkedin.com/in/your-link](https://www.linkedin.com/in/himansh-munjal/)  
 
 📧 Email: munjalhimansh2211@gmail.com  
 
