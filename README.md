@@ -1,103 +1,151 @@
 <h1 align="center">Hi 👋, I'm Himansh Munjal</h1>
 
-<h3 align="center">
-🚀 Data Science | Machine Learning | Deep Learning | AI Builder
-</h3>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00C2FF&size=28&center=true&vCenter=true&width=900&lines=AI+%7C+Machine+Learning+%7C+Backend+Engineering;Building+Scalable+Systems+%26+Intelligent+Products;Golang+%2B+Deep+Learning+%2B+System+Design;Future+AI+Startup+Founder" />
+</p>
 
 <p align="center">
-I build data-driven systems, intelligent models, and real-world AI solutions that create measurable impact.
+  <img src="https://komarev.com/ghpvc/?username=himanshmunjal&label=Profile%20views&color=0e75b6&style=flat" alt="himanshmunjal" />
 </p>
 
 ---
 
 ## 🧠 About Me
 
-- 🎓 3rd Year CSE (Data Science) @ VIT Vellore  
-- 💡 Passionate about solving real-world problems using **AI & Data**  
-- 🚀 Currently building impactful projects in **ML, Optimization & GenAI**  
-- 📈 Interested in **AI Startups, Intelligent Systems & Product Development**
+🎓 3rd Year CSE (Data Science) @ VIT Vellore  
+💼 Full Stack Intern  
+🚀 Building **AI systems, ML pipelines & scalable backend architectures**  
+⚙️ Strong focus on **Deep Learning, NLP, System Design & Production ML**  
+🎯 Mission: Build and launch an **AI-driven startup solving real-world problems**
 
 ---
 
-## 🔥 Featured Project
+## 🚀 Featured Projects (High Impact)
 
-### 💰 Dynamic Price Optimization System
+### 🧠 FinGuard — Hybrid Deep Learning Fraud Detection Engine
+- Multi-layer architecture combining:
+  - Graph Neural Networks (fraud ring detection)
+  - Transformer-based sequence modeling
+  - XGBoost ensemble layer
+- Explainability using SHAP for risk attribution  
+- Real-time transaction simulation + fraud network visualization  
 
-> Designed an intelligent pricing engine for e-commerce to maximize revenue.
-
-- 📊 Built end-to-end pipeline: **EDA → Modeling → Optimization → Simulation**
-- ⚡ Used **XGBoost + SciPy Optimization**
-- 📈 Achieved **~17% revenue uplift (simulated)**
-- 🧠 Applied **Price Elasticity Modeling**
-- 🔁 Used **Time-based Cross Validation** for realistic evaluation
-
-**Tech Stack:**  
-`Python` • `Pandas` • `XGBoost` • `Scikit-learn` • `SciPy`
+**Tech:** PyTorch, PyTorch Geometric, Transformers, XGBoost, SHAP, Streamlit  
 
 ---
 
-## 🌱 Currently Learning
+### ⚡ GridSense — AI Grid Demand Forecasting System
+- LSTM + Transformer models for **24-hour electricity demand prediction**
+- Temporal feature engineering + lag features  
+- Anomaly detection using Isolation Forest on residuals  
+- Interactive monitoring dashboard for grid insights  
 
-- 🤖 Deep Learning (CNNs, RNNs, Transformers)
-- 🧠 NLP & LLMs
-- ⚡ Generative AI & AI Agents
+**Tech:** PyTorch, Scikit-Learn, Pandas, Streamlit  
 
 ---
 
-## 🛠️ Tech Stack
+### 🚨 DisasterTweet AI — NLP-Based Crisis Intelligence System
+- Fine-tuned **RoBERTa** for disaster tweet classification  
+- Multi-class categorization (SOS, medical, damage, misinformation)  
+- Designed urgency ranking algorithm for real-time prioritization  
+- Dashboard for emergency response visualization  
 
-### 💻 Programming
-`Python` `C++` `Java` `Go` `JavaScript`
+**Tech:** HuggingFace, Transformers, PyTorch  
 
-### 📊 Data Science & ML
-`Pandas` `NumPy` `Scikit-learn` `XGBoost` `Matplotlib` `Seaborn`
+---
 
-### 🌐 Development
-`React` `HTML` `CSS` `Tailwind`
+### 🧩 Job Fit & Skill Gap Intelligence System
+- NLP-driven resume analysis system  
+- Job compatibility scoring + skill gap detection  
+- Personalized recommendations for improvement  
+
+**Tech:** spaCy, TF-IDF, XGBoost, PostgreSQL  
+
+---
+
+### ✈️ Airport Management System (Full Stack)
+- Role-based system with booking, baggage tracking & complaints  
+- Secure JWT authentication  
+- RESTful backend using Golang (Gin + GORM)  
+- Scalable PostgreSQL integration + React frontend  
+
+---
+
+### 🚕 Taxi Fare Prediction (Production ML Pipeline)
+- End-to-end ML pipeline with:
+  - Feature engineering (geo + temporal)
+  - Experiment tracking (MLflow)
+  - Workflow orchestration (Prefect)
+- Deployed via FastAPI + Docker  
+
+---
+
+## ⚙️ Tech Stack
+
+### 👨‍💻 Languages
+`Python` `Go` `C++` `JavaScript` `SQL`
+
+### 🧠 AI / ML / DL
+`PyTorch` `Transformers` `Scikit-Learn` `XGBoost` `NLP` `GNN`
+
+### 🌐 Backend & Systems
+`Golang (Gin)` `REST APIs` `JWT` `FastAPI` `Docker`
 
 ### 🗄️ Databases
-`MySQL` `PostgreSQL` `SQL Server`
+`PostgreSQL` `MySQL`
 
-### ⚙️ Tools & Platforms
-`Git` `Linux` `AWS` `Figma`
+### 📊 Data & Analytics
+`Pandas` `NumPy` `Matplotlib` `Seaborn` `Power BI`
+
+### 🎨 Frontend
+`React.js` `Tailwind CSS` `SwiftUI`
 
 ---
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=himanshmunjal&show_icons=true&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=himanshmunjal&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=himanshmunjal&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=himanshmunjal&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
-## 🌐 Connect With Me
+## 🏆 Experience & Leadership
 
-<p align="center">
-<a href="https://www.linkedin.com/in/himansh-munjal/" target="blank">
-<img src="https://skillicons.dev/icons?i=linkedin" height="40" />
+- 💼 Full Stack Intern  
+- 🎯 PR Head — Matrix Multimedia Club  
+- 🎤 Event Host & Anchor  
+- 🧠 Board Member & Mentor  
+
+---
+
+## 🎯 Current Focus
+
+- Deep Learning Systems (Transformers, GNNs)  
+- Backend Engineering (Golang + System Design)  
+- Production ML Pipelines  
+- Building AI Products  
+
+---
+
+## 📬 Connect With Me
+
+<p align="left">
+<a href="https://linkedin.com/in/your-link" target="blank">
+<img src="https://skillicons.dev/icons?i=linkedin" height="30" />
 </a>
-<a href="https://www.hackerrank.com/profile/munjalhimansh221" target="blank">
-<img src="https://skillicons.dev/icons?i=hackerrank" height="40" />
-</a>
-<a href="https://leetcode.com/e1rtytwabs" target="blank">
-<img src="https://skillicons.dev/icons?i=leetcode" height="40" />
+<a href="mailto:your-email@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="30" />
 </a>
 </p>
 
 ---
 
-## 📫 Contact Me
+## 💡 Philosophy
 
-📧 **Email:** munjalhimansh2211@gmail.com  
-📄 **Resume:** [View Here](https://drive.google.com/drive/folders/1VRwg8eW7EGdy0P299LvNaRHJvNXzQouo)
+> “I don’t just build models — I design intelligent systems.”
 
 ---
 
-## ⚡ Fun Fact
-
-> I don’t just learn new technologies — I build real-world systems with them 🚀
+⭐️ *If you’re building something exciting in AI, ML or Backend — let’s connect.*
