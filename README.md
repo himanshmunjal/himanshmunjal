@@ -1,31 +1,103 @@
 <h1 align="center">Hi 👋, I'm Himansh Munjal</h1>
-<h3 align="center">🔭 Passionate about Data Science, Machine Learning, Deep Learning, and Data Visualization.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=himanshmunjal&label=Profile%20views&color=0e75b6&style=flat" alt="himanshmunjal" /> </p>
+<h3 align="center">
+🚀 Data Science | Machine Learning | Deep Learning | AI Builder
+</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=himanshmunjal" alt="himanshmunjal" /></a> </p>
-
-- 🔭 I’m currently working on **Dynamic Price Optimization:- Designing a pricing model for an e-commerce dataset using XGBoost + SciPy optimizer, simulating a 17% revenue gain. Built a full pipeline from EDA to price simulation. Applied elasticity modeling and validated predictions with time-based cross-validation. Tools: Python, Pandas, XGBoost, Scikit-learn, SciPy**
-
-- 🌱 I’m currently learning **Deep Learning, NLP, GenAI**
-
-- 📫 How to reach me **munjalhimansh2211@gmail.com**
-
-- 📄 Know about my experiences [https://drive.google.com/drive/folders/1VRwg8eW7EGdy0P299LvNaRHJvNXzQouo](https://drive.google.com/drive/folders/1VRwg8eW7EGdy0P299LvNaRHJvNXzQouo)
-
-- ⚡ Fun fact **Always keen in learning new things.**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/himansh-munjal/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="himansh munjal" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/profile/munjalhimansh221" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="himansh munjal" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/e1rtytwabs" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="e1rtytwabs" height="30" width="40" /></a>
-<a href="https://www.geeksforgeeks.org/user/munjalhimt2j9/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="munjalhimt2j9" height="30" width="40" /></a>
+<p align="center">
+I build data-driven systems, intelligent models, and real-world AI solutions that create measurable impact.
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=himanshmunjal&show_icons=true&locale=en&layout=compact" alt="himanshmunjal" /></p>
+## 🧠 About Me
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=himanshmunjal&show_icons=true&locale=en" alt="himanshmunjal" /></p>
+- 🎓 3rd Year CSE (Data Science) @ VIT Vellore  
+- 💡 Passionate about solving real-world problems using **AI & Data**  
+- 🚀 Currently building impactful projects in **ML, Optimization & GenAI**  
+- 📈 Interested in **AI Startups, Intelligent Systems & Product Development**
+
+---
+
+## 🔥 Featured Project
+
+### 💰 Dynamic Price Optimization System
+
+> Designed an intelligent pricing engine for e-commerce to maximize revenue.
+
+- 📊 Built end-to-end pipeline: **EDA → Modeling → Optimization → Simulation**
+- ⚡ Used **XGBoost + SciPy Optimization**
+- 📈 Achieved **~17% revenue uplift (simulated)**
+- 🧠 Applied **Price Elasticity Modeling**
+- 🔁 Used **Time-based Cross Validation** for realistic evaluation
+
+**Tech Stack:**  
+`Python` • `Pandas` • `XGBoost` • `Scikit-learn` • `SciPy`
+
+---
+
+## 🌱 Currently Learning
+
+- 🤖 Deep Learning (CNNs, RNNs, Transformers)
+- 🧠 NLP & LLMs
+- ⚡ Generative AI & AI Agents
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Programming
+`Python` `C++` `Java` `Go` `JavaScript`
+
+### 📊 Data Science & ML
+`Pandas` `NumPy` `Scikit-learn` `XGBoost` `Matplotlib` `Seaborn`
+
+### 🌐 Development
+`React` `HTML` `CSS` `Tailwind`
+
+### 🗄️ Databases
+`MySQL` `PostgreSQL` `SQL Server`
+
+### ⚙️ Tools & Platforms
+`Git` `Linux` `AWS` `Figma`
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=himanshmunjal&show_icons=true&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=himanshmunjal&layout=compact&theme=tokyonight" />
+</p>
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+<a href="https://www.linkedin.com/in/himansh-munjal/" target="blank">
+<img src="https://skillicons.dev/icons?i=linkedin" height="40" />
+</a>
+<a href="https://www.hackerrank.com/profile/munjalhimansh221" target="blank">
+<img src="https://skillicons.dev/icons?i=hackerrank" height="40" />
+</a>
+<a href="https://leetcode.com/e1rtytwabs" target="blank">
+<img src="https://skillicons.dev/icons?i=leetcode" height="40" />
+</a>
+</p>
+
+---
+
+## 📫 Contact Me
+
+📧 **Email:** munjalhimansh2211@gmail.com  
+📄 **Resume:** [View Here](https://drive.google.com/drive/folders/1VRwg8eW7EGdy0P299LvNaRHJvNXzQouo)
+
+---
+
+## ⚡ Fun Fact
+
+> I don’t just learn new technologies — I build real-world systems with them 🚀
