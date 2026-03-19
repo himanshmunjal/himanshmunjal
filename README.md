@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Himansh Munjal</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00C2FF&size=28&center=true&vCenter=true&width=900&lines=AI+%7C+Machine+Learning+%7C+Backend+Engineering;Building+Scalable+Systems+%26+Intelligent+Products;Golang+%2B+Deep+Learning+%2B+System+Design;Future+AI+Startup+Founder" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00C2FF&size=28&center=true&vCenter=true&width=900&lines=AI+%7C+Machine+Learning+%7C+Backend+Engineering;Building+Scalable+Systems+%26+Intelligent+Products;Golang+%2B+Deep+Learning+%2B+System+Design;" />
 </p>
 
 <p align="center">
