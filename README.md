@@ -107,7 +107,7 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=himanshmunjal&show_icons=true&theme=tokyonight&hide_border=true" />
   <!-- <img src="https://github-readme-streak-stats.herokuapp.com/?user=himanshmunjal&theme=tokyonight&hide_border=true" /> -->
-  <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com user=himanshmunjal&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" /></a>
+  <img href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com user=himanshmunjal&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" /></img>
 </p>
 
 ---
