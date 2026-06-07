@@ -20,7 +20,7 @@
 
 ---
 
-## 🚀 Featured Projects (High Impact)
+## 🚀 Featured Projects 
 
 ### 🧠 FinGuard — Hybrid Deep Learning Fraud Detection Engine
 - Multi-layer architecture combining:
