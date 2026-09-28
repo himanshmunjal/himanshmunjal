@@ -31,7 +31,7 @@ Redis-style distributed cache in Java (~28K lines, 7 Maven modules) with LRU/LFU
 - 319 JUnit tests, GitHub Actions CI/CD, Docker image + 3-node docker-compose cluster
 
 **Tech:** Java 17, Netty, Multithreading, Consistent Hashing, JMH, Docker, GitHub Actions
-[GitHub](https://github.com/himanshmunjal) · `docker pull himanshmunjal/jcache`
+[GitHub](https://github.com/himanshmunjal/JCache) · `docker pull himanshmunjal/jcache`
 
 ---
 
@@ -43,7 +43,7 @@ Full-stack URL shortener in Go (Gin) with a layered handler/service/repository d
 - JWT (HS256) auth with bcrypt + rotating refresh tokens; per-user analytics dashboards on tuned Postgres schemas
 
 **Tech:** Go, Gin, GORM, PostgreSQL, Redis, React, Tailwind CSS, Recharts
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/LinkPlus)
 
 ---
 
@@ -54,7 +54,7 @@ Cross-device file/text sharing platform with real-time Shared Workspace mode and
 - Go/Gin REST APIs + React workflows for encrypted drag-and-drop uploads and live content feeds
 
 **Tech:** Go, Gin, React, Redis, PostgreSQL, WebSockets, S3/MinIO
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/Ephemeral-share)
 
 ---
 
@@ -65,7 +65,7 @@ Hybrid retrieval-augmented system over source code for grounded, file/line-cited
 - Async Celery/Redis ingestion pipeline; audited against real repos (gin, gson, fastapi, react-use), fixing 20+ parsing/grounding bugs
 
 **Tech:** Python, FastAPI, Qdrant, Tree-sitter, Redis/Celery, React, Docker
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/CodeSense-AI)
 
 ---
 
@@ -77,7 +77,7 @@ Mixed-precision KV cache (FP16/INT8/INT4) that moves tokens between tiers by imp
 - Leak-proof eval suite (perplexity, Needle-in-a-Haystack, LongBench); matched FP16 retrieval in 17/18 test cells
 
 **Tech:** Python, PyTorch, HuggingFace Transformers
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/Adaptive-KV-Cache)
 
 ---
 
@@ -88,7 +88,18 @@ Framework for imbalanced classification that picks a resampling strategy per min
 - Full MLOps stack: DVC, MLflow, Prefect, FastAPI, Docker, GitHub Actions CI; publication-grade stats protocol (Wilcoxon, Holm correction, Friedman tests) implemented, benchmark runs in progress
 
 **Tech:** Python, scikit-learn, imbalanced-learn, XGBoost, LightGBM, FastAPI, MLflow, DVC, Prefect, Docker
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/ARS-Stack)
+
+---
+
+### 🏃 Spectral-Gated Dual-Attention BiGRU for Human Activity Recognition *(in progress — final benchmark numbers pending)*
+CNN-free architecture recognizing human activity from wearable sensor data, with dual attention over sensor channels and timesteps.
+- Adds a frequency-domain gate to channel attention (single-FFT gait-band energy + spectral entropy) — a signal not used by prior dual-attention HAR models — at negligible parameter cost
+- Lightweight by design: roughly half the parameters of a CNN+BiGRU reference, targeting comparable or better accuracy on UCI-HAR, WISDM and PAMAP2
+- Leak-free, subject-independent evaluation (LOSO-style k-fold, multiple seeds, held-out validation subjects) backed by significance testing (Wilcoxon, Holm correction) rather than a single number
+- Re-runnable end-to-end pipeline (preprocess → train → profile → stats → report); fixed 7 evaluation bugs from an earlier pass, including validation leakage
+**Tech:** PyTorch, NumPy, SciPy, pandas, thop, Matplotlib
+[GitHub](https://github.com/himanshmunjal/Dual-attention-HAR)
 
 ---
 
@@ -97,9 +108,8 @@ Multi-zone electricity demand forecasting with uncertainty-aware modeling.
 - 2-layer LSTM + Monte Carlo Dropout, 10 engineered features (temporal encodings, lags, rolling stats)
 - 21.9–36.9 kWh MAE / 32.0–53.8 kWh RMSE across 4 grid zones
 - Unsupervised anomaly detection via LSTM Autoencoder trained only on normal consumption windows
-
 **Tech:** Python, PyTorch, FastAPI, React, LSTM, Time-Series Forecasting
-[GitHub](https://github.com/himanshmunjal)
+[GitHub](https://github.com/himanshmunjal/GridSense)
 
 ---
 
@@ -150,6 +160,22 @@ Production-style incremental warehouse on the real Olist dataset (99K orders, 96
 - 💼 Full Stack Intern, Beryl Systems Pvt. Ltd. — built and deployed 5 production REST APIs (Go, JWT, RBAC) for ~500 daily active users; cut p95 latency 850 ms → 110 ms
 - 🎯 Creative Head, Matrix — The Multimedia Club, VIT — led logistics for 6+ events, mentored juniors, raised feedback scores 30%
 - 🧩 200+ problems solved on LeetCode (global rank under 850K)
+
+---
+
+## 🎯 Currently Working On
+
+- 🏃 Finishing benchmark runs and significance testing for the Spectral-Gated Dual-Attention BiGRU (HAR) project
+- 📊 Training and scoring the ARS-Stack ensemble across benchmark datasets
+- 🗄️ A Kafka-based real-time pipeline project — benchmarking throughput, partitioning, and consumer failure/recovery
+- ⏱️ An Airflow-based data reliability & observability project — schema-change detection, quarantine tables, backfill recovery
+
+## 📚 Currently Learning
+
+- `Docker` (deeper orchestration & multi-service patterns)
+- `Apache Airflow` — production-grade pipeline orchestration
+- `Apache Kafka` — distributed streaming & event-driven systems
+- `BigQuery` — partitioned/clustered warehouse design at scale
 
 ---
 
