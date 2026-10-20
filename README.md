@@ -115,7 +115,7 @@ Hybrid RAG over source code for file/line-cited Q&A and blast-radius impact anal
 
 - 💼 **Full Stack Intern, Beryl Systems** — 5 production REST APIs (Go, JWT, RBAC) for ~500 daily users; p95 latency 850 ms → 110 ms; fixed 4 security vulnerabilities (OWASP)
 - 🎯 **Manager, General Enquiry Team, VIT** — led a 15-member team resolving 500+ student queries
-- 🧩 **250+ problems solved on LeetCode**, 50 Days Badge
+- 🧩 **200+ problems solved on LeetCode**, 50 Days Badge
 
 ---
 
