@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Himansh Munjal</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00C2FF&size=28&center=true&vCenter=true&width=900&lines=Backend+Engineering+%7C+Distributed+Systems;Machine+Learning+%2B+LLM+Systems;Java+%2B+Go+%2B+Python+%2B+System+Design;" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00C2FF&size=28&center=true&vCenter=true&width=900&lines=Backend+%26+Distributed+Systems;LLM+Inference+%2B+RAG+Systems;Java+%2B+Go+%2B+Python+%2B+SQL;" />
 </p>
 
 <p align="center">
@@ -13,136 +13,92 @@
 ## 🧠 About Me
 
 🎓 B.Tech CSE (Data Science) @ VIT Vellore — CGPA 8.47, 2023–2027
-💼 Full Stack Intern @ Beryl Systems — cut p95 API latency 7x (850 ms → 110 ms) on production Go services
-🚀 Building distributed systems, backend infrastructure, and applied ML / LLM systems
-⚙️ Focus areas: concurrency & system design, retrieval-augmented systems, LLM inference optimization
-🎯 Mission: ship production-grade software end to end — from system design to deployment
+💼 Full Stack Intern @ Beryl Systems — shipped 5 production Go REST APIs for ~500 daily users and cut p95 latency ~7x (850 ms → 110 ms)
+🚀 Building backend and distributed systems, and applied ML / LLM systems
+🎯 Ship production-grade software end to end, and measure it until the numbers hold up
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🗄️ JCache — Distributed In-Memory Cache Server
-Redis-style distributed cache in Java (~28K lines, 7 Maven modules) with LRU/LFU/ARC eviction and TTL expiry.
-- 3 interchangeable concurrency modes: global lock, 16-way lock striping, lock-free (ConcurrentHashMap + CAS)
-- Lock striping gave 4.4x single-lock throughput at 16 threads; lock-free mode hit 6.2M ops/sec (JMH, Zipfian workload)
-- Non-blocking Netty TCP server, custom protocol, ~95K ops/sec across 8 clients, sub-ms p99
-- Client-side consistent hashing (MD5, 150 virtual nodes/server), crash-safe via append-only log + atomic snapshots
-- 319 JUnit tests, GitHub Actions CI/CD, Docker image + 3-node docker-compose cluster
+### 🗄️ JCache — Redis-Compatible Distributed Cache Server
+Java cache server (~18K LOC, 6 Maven modules) with O(1) LRU, LFU and self-tuning ARC eviction.
+- 3 pluggable concurrency modes (global RW lock, 16-way striping, lock-free reads), benchmarked with JMH
+- Non-blocking Netty server speaking a custom protocol and RESP (works with redis-cli/Jedis): **~65K ops/s at p99 ≈ 0.2 ms**
+- Hit rates on a 256-entry cache, 1,000 Zipf keys: LRU 74.2%, LFU 81.0%, ARC 76.6%; LFU 61.7% vs. LRU 51.0% on scan-heavy loads
+- Client-side consistent hashing (150 virtual nodes) moves only ~1/N of keys on node join/leave; append-only log + atomic snapshots
+- 500+ JUnit tests, CI/CD, Docker image, 3-node compose cluster
 
-**Tech:** Java 17, Netty, Multithreading, Consistent Hashing, JMH, Docker, GitHub Actions
+**Tech:** Java 17, Netty, JMH, Docker, GitHub Actions
 [GitHub](https://github.com/himanshmunjal/JCache) · `docker pull himanshmunjal/jcache`
 
 ---
 
 ### 🔗 LinkPlus — URL Shortener, QR Code & Analytics Platform
-Full-stack URL shortener in Go (Gin) with a layered handler/service/repository design.
-- Redis cache-aside redirects + goroutine-based click tracking (device, GeoIP, hashed IP) with zero added latency
-- QR codes route every scan through the redirect pipeline for accurate analytics
-- Atomic sliding-window rate limiter as a Redis Lua script, fails open if Redis is down
-- JWT (HS256) auth with bcrypt + rotating refresh tokens; per-user analytics dashboards on tuned Postgres schemas
+Full-stack Go (Gin) shortener with a layered handler/service/repository design.
+- Redis cache-aside redirects + goroutine click tracking (device, GeoIP, hashed IP) with no added redirect latency
+- QR codes encode a hidden short URL, so every scan flows through the redirect pipeline; scan log and counter commit in one DB transaction
+- Atomic sliding-window rate limiter as a Redis Lua script that fails open
+- JWT auth with bcrypt and rotating refresh tokens stored only as SHA-256 hashes
 
-**Tech:** Go, Gin, GORM, PostgreSQL, Redis, React, Tailwind CSS, Recharts
+**Tech:** Go, Gin, PostgreSQL, Redis, React, Tailwind CSS
 [GitHub](https://github.com/himanshmunjal/LinkPlus)
 
 ---
 
-### 🔒 Ephemeral Share — End-to-End Encrypted Temporary Sharing
-Cross-device file/text sharing platform with real-time Shared Workspace mode and 5-minute session expiry.
-- Browser-side AES-256-GCM encryption; decryption keys never touch the server, shared only via URL fragments
-- Redis TTL + keyspace-event cleanup for expired S3 objects and live WebSocket connections
-- Go/Gin REST APIs + React workflows for encrypted drag-and-drop uploads and live content feeds
-
-**Tech:** Go, Gin, React, Redis, PostgreSQL, WebSockets, S3/MinIO
-[GitHub](https://github.com/himanshmunjal/Ephemeral-share)
-
----
-
-### 🤖 CodeSense — AI-Powered Codebase Intelligence Engine
-Hybrid retrieval-augmented system over source code for grounded, file/line-cited code Q&A.
-- Tree-sitter AST parsing across 5 languages + dual-vector Qdrant index (semantic + node2vec call-graph embeddings)
-- Diagnosed a retrieval failure by measuring embedding quality directly, swapped in a contrastively-trained model, and recalibrated confidence gating against real score distributions
-- Async Celery/Redis ingestion pipeline; audited against real repos (gin, gson, fastapi, react-use), fixing 20+ parsing/grounding bugs
-
-**Tech:** Python, FastAPI, Qdrant, Tree-sitter, Redis/Celery, React, Docker
-[GitHub](https://github.com/himanshmunjal/CodeSense-AI)
-
----
-
 ### 🧮 Adaptive Token-Aware KV Cache Compression for LLM Inference
-Mixed-precision KV cache (FP16/INT8/INT4) that moves tokens between tiers by importance instead of dropping them.
-- Drop-in `transformers.Cache`: ~40% KV memory reduction at ≤0.16% perplexity loss on Qwen2.5-1.5B and Phi-3-mini
-- Up to 56% memory savings at 0.20% perplexity loss (1.94 GB → 1.15 GB on Phi-3-mini, 8K context)
-- Three importance scorers (H2O, VATP, KeyDiff); ~1.8x faster adaptive decoding (12 → 22 tok/s)
-- Leak-proof eval suite (perplexity, Needle-in-a-Haystack, LongBench); matched FP16 retrieval in 17/18 test cells
+Mixed-precision KV cache (FP16/INT8/INT4) that moves tokens between tiers by importance instead of dropping them. A drop-in `transformers.Cache`.
+- **~40% KV memory saved at ≤0.16% perplexity loss** on Qwen2.5-1.5B and Phi-3-mini; up to 56% at 0.20% (1.94 GB → 1.15 GB, 8K context)
+- Per-channel key / per-token value INT4 quantization cut key reconstruction error 17.3%
+- 3 importance scorers (H2O, VATP, KeyDiff); ~1.8x faster adaptive decoding (12 → 22 tok/s)
+- Leak-proof eval (perplexity, Needle-in-a-Haystack, LongBench); matched FP16 retrieval in 17 of 18 cells
 
 **Tech:** Python, PyTorch, HuggingFace Transformers
 [GitHub](https://github.com/himanshmunjal/Adaptive-KV-Cache)
 
 ---
 
-### 📊 ARS-Stack — Adaptive Resampler-Selection Ensemble *(in progress — training & scoring pending)*
-Framework for imbalanced classification that picks a resampling strategy per minority-class region instead of globally.
-- Cluster-level diagnostics (k-NN overlap, density) select among SMOTE/ADASYN/SMOTE-Tomek/SMOTE-ENN with interpretable rules
-- Confidence-weighted RF + XGBoost + LightGBM ensemble; leak-free, fold-local fitting of scaling, resampling, weights & thresholds
-- Full MLOps stack: DVC, MLflow, Prefect, FastAPI, Docker, GitHub Actions CI; publication-grade stats protocol (Wilcoxon, Holm correction, Friedman tests) implemented, benchmark runs in progress
+### 📊 ARS-Stack — Adaptive Resampler Selection for Imbalanced Classification
+Picks SMOTE, ADASYN, SMOTE-Tomek or SMOTE-ENN per minority-class cluster, feeding a confidence-weighted RF + XGBoost + LightGBM ensemble.
+- Leakage-free study on **28 datasets, 9 variants, 3,780 CV folds** (Friedman/Nemenyi, Holm-corrected Wilcoxon, Bayesian equivalence tests)
+- Beats SMOTE-ENN (Bayesian P ≥ 0.96) but is practically equivalent to plain SMOTE; resampling mainly helps at ≤75 minority samples
+- Found and fixed 5 evaluation flaws that inflate new methods; IEEE-format paper draft
+- Reproducible MLOps stack (DVC, MLflow, Prefect, FastAPI, Docker) with 130+ pytest tests in CI
 
-**Tech:** Python, scikit-learn, imbalanced-learn, XGBoost, LightGBM, FastAPI, MLflow, DVC, Prefect, Docker
+**Tech:** Python, scikit-learn, XGBoost, LightGBM, MLflow, DVC, Docker
 [GitHub](https://github.com/himanshmunjal/ARS-Stack)
 
 ---
 
-### 🏃 Spectral-Gated Dual-Attention BiGRU for Human Activity Recognition *(in progress — final benchmark numbers pending)*
-CNN-free architecture recognizing human activity from wearable sensor data, with dual attention over sensor channels and timesteps.
-- Adds a frequency-domain gate to channel attention (single-FFT gait-band energy + spectral entropy) — a signal not used by prior dual-attention HAR models — at negligible parameter cost
-- Lightweight by design: roughly half the parameters of a CNN+BiGRU reference, targeting comparable or better accuracy on UCI-HAR, WISDM and PAMAP2
-- Leak-free, subject-independent evaluation (LOSO-style k-fold, multiple seeds, held-out validation subjects) backed by significance testing (Wilcoxon, Holm correction) rather than a single number
-- Re-runnable end-to-end pipeline (preprocess → train → profile → stats → report); fixed 7 evaluation bugs from an earlier pass, including validation leakage
-**Tech:** PyTorch, NumPy, SciPy, pandas, thop, Matplotlib
-[GitHub](https://github.com/himanshmunjal/Dual-attention-HAR)
+### 🤖 CodeSense — AI-Powered Codebase Intelligence Engine
+Hybrid RAG over source code for file/line-cited Q&A and blast-radius impact analysis.
+- Tree-sitter AST parsing across 5 languages, dual-vector Qdrant index (semantic + node2vec call-graph) and cross-encoder reranking
+- Diagnosed a retrieval failure by measuring embedding quality directly, swapped in a contrastively trained model and recalibrated the confidence gate
+- Async Celery/Redis ingestion; audited on gin, gson, fastapi and react-use, fixing 20+ parsing and grounding bugs
+
+**Tech:** Python, FastAPI, Qdrant, Tree-sitter, Celery, React, Docker
+[GitHub](https://github.com/himanshmunjal/CodeSense-AI)
 
 ---
 
-### ⚡ GridSense — Smart Grid Demand Forecasting & Anomaly Detection
-Multi-zone electricity demand forecasting with uncertainty-aware modeling.
-- 2-layer LSTM + Monte Carlo Dropout, 10 engineered features (temporal encodings, lags, rolling stats)
-- 21.9–36.9 kWh MAE / 32.0–53.8 kWh RMSE across 4 grid zones
-- Unsupervised anomaly detection via LSTM Autoencoder trained only on normal consumption windows
-**Tech:** Python, PyTorch, FastAPI, React, LSTM, Time-Series Forecasting
-[GitHub](https://github.com/himanshmunjal/GridSense)
+### 📈 OSS Contributor Activation & Retention — Survival Analysis on GitHub Events
+8-stage DuckDB SQL pipeline over **13M GitHub Archive events** (1.14M PRs) modeling first-touch to second-PR for 17K contributors across 297 repos.
+- 35% of first-time contributors return within 30 days (29% if the first PR merged vs. 17% if not)
+- Fast first response is a repo-level effect, not a PR-level one: pooled Cox HR 1.69 drops to 0.99 within repos
+- Power analysis for a repo-randomized experiment (~663 repos per arm to detect +5 pp)
 
----
-
-### 🏗️ Customer 360 Data Warehouse — Incremental ETL on Real E-Commerce Data
-Production-style incremental warehouse on the real Olist dataset (99K orders, 96K customers).
-- Incremental SCD Type 2 merge, verified byte-identical across day-by-day, batch, and random-order loads
-- 30+ statement idempotent SQL pipeline, ported to partitioned/clustered BigQuery with automated cross-engine parity checks
-- Leakage-safe ML model with forward-chaining validation; 19 SQL integrity assertions + 12 pytest scenarios; CI with Postgres service container; Streamlit dashboard
-
-**Tech:** Python, PostgreSQL, BigQuery, scikit-learn, GitHub Actions, Streamlit
+**Tech:** Python, DuckDB, SQL, lifelines, statsmodels, FastAPI, Streamlit
 [GitHub](https://github.com/himanshmunjal)
 
 ---
 
 ## ⚙️ Tech Stack
 
-### 👨‍💻 Languages
-`Java` `Go` `Python` `SQL` `JavaScript`
-
-### 🧠 AI / ML / DL
-`PyTorch` `HuggingFace Transformers` `scikit-learn` `XGBoost` `LightGBM` `NLP` `RAG` `Vector DBs (Qdrant)`
-
-### 🌐 Backend & Systems
-`Netty` `Gin` `FastAPI` `REST APIs` `WebSockets` `TCP/IP` `Multithreading` `Consistent Hashing` `JWT` `RBAC`
-
-### 🗄️ Databases & MLOps
-`PostgreSQL` `Redis` `MongoDB` `BigQuery` `MLflow` `DVC` `Prefect` `Celery` `Docker` `GitHub Actions`
-
-### 📊 Data & Analytics
-`NumPy` `Pandas` `SciPy` `Matplotlib` `Power BI` `Tableau`
-
-### 🎨 Frontend
-`React.js` `Tailwind CSS`
+**Languages:** `Java` `Go` `Python` `SQL` `JavaScript` `R`
+**AI / ML:** `PyTorch` `HuggingFace` `scikit-learn` `XGBoost` `LightGBM` `RAG` `Qdrant` `ChromaDB`
+**Backend & Systems:** `Netty` `Gin` `FastAPI` `REST` `WebSockets` `JWT` `Consistent Hashing` `Multithreading`
+**Data & MLOps:** `PostgreSQL` `Redis` `BigQuery` `DuckDB` `MLflow` `DVC` `Prefect` `Celery` `Docker` `GitHub Actions`
+**Frontend:** `React` `Tailwind CSS`
 
 ---
 
@@ -157,44 +113,25 @@ Production-style incremental warehouse on the real Olist dataset (99K orders, 96
 
 ## 🏆 Experience & Leadership
 
-- 💼 Full Stack Intern, Beryl Systems Pvt. Ltd. — built and deployed 5 production REST APIs (Go, JWT, RBAC) for ~500 daily active users; cut p95 latency 850 ms → 110 ms
-- 🎯 Creative Head, Matrix — The Multimedia Club, VIT — led logistics for 6+ events, mentored juniors, raised feedback scores 30%
-- 🧩 200+ problems solved on LeetCode (global rank under 850K)
+- 💼 **Full Stack Intern, Beryl Systems** — 5 production REST APIs (Go, JWT, RBAC) for ~500 daily users; p95 latency 850 ms → 110 ms; fixed 4 security vulnerabilities (OWASP)
+- 🎯 **Manager, General Enquiry Team, VIT** — led a 15-member team resolving 500+ student queries
+- 🧩 **250+ problems solved on LeetCode**, 50 Days Badge
 
 ---
 
-## 🎯 Currently Working On
+## 🎯 Currently
 
-- 🏃 Finishing benchmark runs and significance testing for the Spectral-Gated Dual-Attention BiGRU (HAR) project
-- 📊 Training and scoring the ARS-Stack ensemble across benchmark datasets
-- 🗄️ A Kafka-based real-time pipeline project — benchmarking throughput, partitioning, and consumer failure/recovery
-- ⏱️ An Airflow-based data reliability & observability project — schema-change detection, quarantine tables, backfill recovery
-
-## 📚 Currently Learning
-
-- `Docker` (deeper orchestration & multi-service patterns)
-- `Apache Airflow` — production-grade pipeline orchestration
-- `Apache Kafka` — distributed streaming & event-driven systems
-- `BigQuery` — partitioned/clustered warehouse design at scale
+- 🏃 Finishing benchmarks and significance testing for a Spectral-Gated Dual-Attention BiGRU for human activity recognition
+- 📚 Learning Apache Kafka, Airflow, and BigQuery for data engineering
 
 ---
-
-## 🎯 Current Focus
-
-- Distributed systems & backend infrastructure (Java, Go)
-- LLM inference optimization & retrieval-augmented systems
-- Data engineering (Airflow, Kafka, BigQuery)
-- DSA
 
 ## 🌐 Portfolio & Contact
 
 🔗 Portfolio: [himansh-portfolio.vercel.app](https://himansh-portfolio.vercel.app/)
-📂 GitHub: [github.com/himanshmunjal](https://github.com/himanshmunjal)
 💼 LinkedIn: [linkedin.com/in/himansh-munjal](https://www.linkedin.com/in/himansh-munjal/)
 📧 Email: munjalhimansh2211@gmail.com
 
 ---
 
-> I build systems that work under real load — from lock-free caches to retrieval-augmented pipelines — and I test them until the numbers hold up.
-
-⭐️ *If you're building something exciting in backend, distributed systems, or applied ML — let's connect.*
+> I build systems that work under real load, from lock-free caches to retrieval-augmented pipelines, and I test them until the numbers hold up.
